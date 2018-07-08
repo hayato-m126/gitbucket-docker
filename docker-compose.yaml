@@ -1,0 +1,14 @@
+version: '2'
+services:
+  gitbucket:
+    restart: always
+    build:
+      context: .
+      args:
+        gitbucket_version: "4.25.0"
+    image: hyt/gitbucket:4.25.0
+    container_name: gitbucket
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./gitbucket:/gitbucket
