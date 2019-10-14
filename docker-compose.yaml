@@ -5,8 +5,8 @@ services:
     build:
       context: .
       args:
-        gitbucket_version: "4.25.0"
-    image: hyt/gitbucket:4.25.0
+        gitbucket_version: "4.31.2"
+    image: hyt/gitbucket:4.31.2
     container_name: gitbucket
     ports:
       - "8080:8080"
