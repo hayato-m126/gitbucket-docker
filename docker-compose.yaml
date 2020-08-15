@@ -1,7 +1,6 @@
-version: '2'
+version: '3'
 services:
   gitbucket:
-    restart: always
     build:
       context: .
       args:
@@ -9,6 +8,6 @@ services:
     image: hyt/gitbucket:4.31.2
     container_name: gitbucket
     ports:
-      - "8080:8080"
+      - "8888:8080"
     volumes:
       - ./gitbucket:/gitbucket

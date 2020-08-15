@@ -1,8 +1,6 @@
 FROM java:8-jre
 ARG gitbucket_version
 
-MAINTAINER Hayato Mizushima
-
 ADD https://github.com/gitbucket/gitbucket/releases/download/$gitbucket_version/gitbucket.war /opt/gitbucket.war
 
 RUN ln -s /gitbucket /root/.gitbucket
